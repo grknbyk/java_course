@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="570.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="musicplayer.Controller">
+   <children>
+      <Label fx:id="songName" prefHeight="70.0" prefWidth="570.0" text="Label" textFill="#00ff15">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="playButton" layoutY="100.0" mnemonicParsing="false" onAction="#playMusic" prefHeight="30.0" prefWidth="50.0" text="Play" />
+      <Button fx:id="resetButton" layoutX="110.0" layoutY="100.0" mnemonicParsing="false" onAction="#resetMusic" prefHeight="30.0" prefWidth="60.0" text="Reset" />
+      <Button fx:id="pauseButton" layoutX="50.0" layoutY="100.0" mnemonicParsing="false" onAction="#pauseMusic" prefHeight="30.0" prefWidth="60.0" text="Pause" />
+      <Button fx:id="preButton" layoutX="180.0" layoutY="100.0" mnemonicParsing="false" onAction="#preMusic" prefHeight="30.0" prefWidth="80.0" text="Previous" />
+      <Button fx:id="nextButton" layoutX="260.0" layoutY="100.0" mnemonicParsing="false" onAction="#nextMusic" prefHeight="30.0" prefWidth="55.0" text="Next" />
+      <ComboBox fx:id="speedCtrl" layoutX="320.0" layoutY="100.0" onAction="#changeSpeed" prefHeight="30.0" prefWidth="100.0" promptText="Speed" />
+      <Slider fx:id="volSlider" layoutX="430.0" layoutY="100.0" max="150.0" prefHeight="30.0" prefWidth="140.0" value="100.0" />
+      <ProgressBar fx:id="progressBar" layoutY="71.0" prefHeight="20.0" prefWidth="570.0" progress="0.0" />
+   </children>
+</AnchorPane>
